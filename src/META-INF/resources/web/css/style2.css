@@ -1,0 +1,11 @@
+table {font-family:"gb2312";font-size:9pt;line-height:120%;border-collapse:collapse;border-color:acacac}
+a {text-transform:none; text-decoration:none;color:4455aa;}
+a:hover {text-decoration:underline;color:ff0000;}
+td {line-height:120%}
+.inputTextCss{font-size:10.2pt;background-color:ffffff;color:black;border-top:solid 1px FFAB00;border-left:solid 1px FFAB00;border-right:solid 1px FFAB00;border-bottom:solid 1px FFAB00}
+.inputPasswordCss{font-size:10.2pt;background-color:eeeeee;color:red;border-top:dotted 1px white;border-left:dotted 1px white;border-right:dotted 1px white;border-bottom:solid 1px red}
+.inputButtonCss{font-size:9.2pt;background-color:eeeeee;color:Black;border-top:outset 1.5pt white;border-left:outset 1.5pt white;border-right:solid 1px black;border-bottom:solid 1px black;cursor:hand}
+.radioCss{padding:0px;margin:0px;font-size:9pt;background-color:eeeeee;color:black;padding-top:2px;border-top:solid 1px white;border-left:outset 1.5pt white;border-right:solid 1px black;border-bottom:solid 1px black}
+.textareaCss{padding:0px;margin:0px;font-size:10.2pt;background-color:eeeeee;
+	scrollbar-3dlight-color:white;scrollbar-arrow-color:black;border-top:inset 1.5pt white;border-left:inset 1.5pt white;border-right:solid 1px black;border-bottom:solid 1px black;scrollbar-base-color:aaaaaa;scrollbar-darkshadow-color:black;scrollbar-face-color:aaaaaa;scrollbar-highlight-color:999999;scrollbar-shadow-color:white}
+.selectCss{font-size:9.2pt;background-color:eeeeee;color:Black;}
