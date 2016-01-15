@@ -135,11 +135,9 @@ public class Idx {
 			m.setAttr("tsgp_list", tsgp_list);
 		}
 		
-		if(!count.isEmpty()){
-			m.setAttr("count", count.get("bcount"));
-		}else{
-			m.setAttr("count", 1);
-		}
+		
+			m.setAttr("bcount", count.get("bcount"));
+		
 		System.out.println("我出来了");
 		
 		return "";

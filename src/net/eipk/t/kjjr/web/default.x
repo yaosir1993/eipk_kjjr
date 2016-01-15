@@ -107,10 +107,10 @@ clckm=((min<10)?"0":"")+min;clcks=((sec<10)?"0":"")+sec;clck=(hrs>=12)?"下午":
             <td height="85" bgcolor="#F7F7F7"><div align="center">
 			<form name="form1" method="post" action="login.x" onSubmit="return(login());">
 				<table border="0" cellpadding="0" cellspacing="0">
-					<tr><td height="25">用户名<input name="username" type="text" value="" size="12" class="inputTextCss"></td></tr>
-					<tr><td height="25">密&nbsp;&nbsp;&nbsp;码<input name="password" type="password" value="" size="12" class="inputTextCss"></td></tr>
+					<tr><td height="25">用户名<input name="username"  width="20" type="text" value="" size="11" class="inputTextCss"></td></tr>
+					<tr><td height="25">密&nbsp;&nbsp;&nbsp;&nbsp;码<input name="password"  width="20" type="password" value="" size="12" class="inputTextCss"></td></tr>
 					<tr>
-						<td height="25"><input name="submit" type="button" value="登陆" class="inputButtonCss"onclick="javascript:syslogin(document.all.loginform,document.all.username,document.all.password);">
+						<td height="25" align="center"><input name="submit" type="button" value="登陆" class="inputButtonCss"onclick="javascript:syslogin(document.all.loginform,document.all.username,document.all.password);">
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<input name="submit" type="reset" value="重填" class="inputButtonCss"></td>
 					</tr>
@@ -281,7 +281,7 @@ clckm=((min<10)?"0":"")+min;clcks=((sec<10)?"0":"")+sec;clck=(hrs>=12)?"下午":
                     <td width="221" height="110"><div align="center">
 							<table border="0" cellpadding="0" cellspacing="0">
 								#Begin{kjxw_list}
-								<tr><td height="22" width="221"><div align="center">&nbsp;<img src="#{DocumentRoot}/web/image/center04.jpg">&nbsp;<a href="showmessage.x?mid=#{mid}" target="_blank">#{mtitle}</a></div></td></tr>
+								<tr><td height="22" width="221"><div align="left">&nbsp;<img src="#{DocumentRoot}/web/image/center04.jpg">&nbsp;<a href="showmessage.x?mid=#{mid}" target="_blank">#{mtitle}</a></div></td></tr>
 								#End{kjxw_list}
 							</table>
 					</div></td>
@@ -302,8 +302,8 @@ clckm=((min<10)?"0":"")+min;clcks=((sec<10)?"0":"")+sec;clck=(hrs>=12)?"下午":
 					  	#Begin{zcfg_list}
                         <tr>
                           <td width="38" height="24"><div align="center"><img src="#{DocumentRoot}/web/image/center07.jpg"></div></td>
-                          <td width="270" height="24"><div align="center"><a href="showmessage.x?mid=#{mid}" target="_blank">#{mtitle}</a></div></td>
-						  <td width="80" height="24"><div align="left"><fmt:formatDate value='#{insertdate}' pattern='yyyy-MM-dd'/></div>                        </tr>
+                          <td width="270" height="24"><div align="left"><a href="showmessage.x?mid=#{mid}" target="_blank">#{mtitle}</a></div></td>
+						  <td width="80" height="24"><div align="left">#Date{insertdate,yyyy-MM-dd}</div>                        </tr>
 						#End{zcfg_list}
                       </table>
                     </div></td>
@@ -323,8 +323,8 @@ clckm=((min<10)?"0":"")+min;clcks=((sec<10)?"0":"")+sec;clck=(hrs>=12)?"下午":
 								#Begin{zscq_list}
 								<tr>
 								  <td width="38" height="22"><div align="center"><img src="#{DocumentRoot}/web/image/center07.jpg"> </div></td>
-								  <td width="270" height="22"><div align="center"><a href="showmessage.x?mid=#{mid}" target="_blank">#{mtitle}</a></div></td>
-								  <td width="80" height="22"><div align="center"><fmt:formatDate value='#{insertdate}' pattern='yyyy-MM-dd'/></div></td>
+								  <td width="270" height="22"><div align="left"><a href="showmessage.x?mid=#{mid}" target="_blank">#{mtitle}</a></div></td>
+								  <td width="80" height="22"><div align="center">#Date{insertdate,yyyy-MM-dd}</div></td>
 								</tr>
 								#End{zscq_list}
 							</table>					</td>
@@ -342,10 +342,10 @@ clckm=((min<10)?"0":"")+min;clcks=((sec<10)?"0":"")+sec;clck=(hrs>=12)?"下午":
 							</tr>
 							<tr>
 								<td width="2" background="#{DocumentRoot}/web/image/center19.jpg"><div align="center"></div></td>
-								<td width="187" height="92"><div align="center">
+								<td width="187" height="90"><div align="center">
 									<table border="0" cellpadding="0" cellspacing="0" width="187" height="92">
 										#Begin{kjjh_list}
-										<tr><td width="186"><div align="center">&nbsp;<a href="showmessage.x?mid=#{mid}" target="_blank">#{mtitle}</a></div></td></tr>
+										<tr><td width="186"><div align="left">&nbsp;<a href="showmessage.x?mid=#{mid}" target="_blank">#{mtitle}</a></div></td></tr>
 										#End{kjjh_list}
 										<tr><td height="15"><div align="right"><a href="list.x?cid=8"><img src="#{DocumentRoot}/web/image/center08.jpg" border="0"></a></div></td></tr>
 									</table>
@@ -354,7 +354,7 @@ clckm=((min<10)?"0":"")+min;clcks=((sec<10)?"0":"")+sec;clck=(hrs>=12)?"下午":
 								<td width="186"><div align="center">
 									<table border="0" cellpadding="0" cellspacing="0" width="187" height="92">
 										#Begin{cgjl_list}
-										<tr><td><div align="center">&nbsp;<a href="showmessage.x?mid=#{mid}" target="_blank">#{mtitle}</a></div></td></tr>
+										<tr><td><div align="left">&nbsp;<a href="showmessage.x?mid=#{mid}" target="_blank">#{mtitle}</a></div></td></tr>
 										#End{cgjl_list}
 										<tr><td height="15"><div align="right"><a href="list.x?cid=9"><img src="#{DocumentRoot}/web/image/center08.jpg" border="0"></a></div></td></tr>
 									</table>
@@ -367,10 +367,10 @@ clckm=((min<10)?"0":"")+min;clcks=((sec<10)?"0":"")+sec;clck=(hrs>=12)?"下午":
 							</tr>
 							<tr>
 								<td width="2" background="#{DocumentRoot}/web/image/center19.jpg"><div align="center"></div></td>
-								<td width="187" height="100"><div align="center">
+								<td width="187" height="90"><div align="center">
 									<table border="0" cellpadding="0" cellspacing="0" width="187" height="100">
 										#Begin{zjdy_list}
-										<tr><td><div align="center">&nbsp;<a href="showmessage.x?mid=#{mid}" target="_blank">#{mtitle}</a></div></td></tr>
+										<tr><td><div align="left">&nbsp;<a href="showmessage.x?mid=#{mid}" target="_blank">#{mtitle}</a></div></td></tr>
 										#End{zjdy_list}
 										<tr><td height="15"><div align="right"><a href="list.x?cid=10"><img src="#{DocumentRoot}/web/image/center08.jpg" border="0"></a></div></td></tr>
 									</table>
